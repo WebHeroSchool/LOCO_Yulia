@@ -10,21 +10,37 @@ body {
 	background: url(Rectangle.jpg) no-repeat;
 	font-family: Montserrat;
 }
+.header__logo {
+	color: white;
+	position: absolute;
+	left: 52px;
+    top: 36px;
+    font-size: 30px;
 
+}
 .first__picture {
 	position: absolute;
-    width: 855.54px;
-    height: 1127.76px;
-    left: 49.28px;
-    top: 60.92px;
+    width: 549px;
+    height: 562px;
+    left: 186px;
+    top: 169px;
     background: url(girl.jpg) no-repeat;
  }
  .first__text {
  	position: absolute;
     width: 491px;
     height: 397px;
-    left: 786px;
+    right: 176px;
     top: 263px;
+ }
+ .first__title{
+ 	font-size: 80px;
+ 	font-weight: bold;
+ 	margin-top: 0;
+ 	margin-bottom: 26px;
+ }
+ .first__words {
+ 	margin-bottom: 36px;
  }
  .first__button-read {
  	border: 1.5px solid #000000;
