@@ -1,6 +1,64 @@
 
 
-div {
+.first, .second, .third {
+	position: relative;
+	width: 1440px;
+	height: 900px;
+}
+
+body {
+	background: url(Rectangle.jpg) no-repeat;
 	font-family: Montserrat;
-	font-size: 32px;
+}
+
+.first__picture {
+	position: absolute;
+    width: 855.54px;
+    height: 1127.76px;
+    left: 49.28px;
+    top: 60.92px;
+    background: url(girl.jpg) no-repeat;
+ }
+ .first__text {
+ 	position: absolute;
+    width: 491px;
+    height: 397px;
+    left: 786px;
+    top: 263px;
+ }
+ .first__button-read {
+ 	border: 1.5px solid #000000;
+    box-sizing: border-box;
+    background: white;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 14px 41px;
+    text-transform: uppercase;
+ }
+ .first__button-next {
+ 	position: relative;
+ 	background-color: white;
+    font-weight: 500;
+    font-size: 13px;
+    border: none;
+    text-transform: uppercase;
+}
+.first__button-next::before {
+	content: '';
+	position: absolute;
+	left: 191px;
+	top: 5px;
+	border: solid transparent;
+    width: 43px;
+	border-bottom: 1.5px solid black;
+}
+.first__button-next::after {
+	content: '';
+	position: absolute;
+	left: 234px;
+	top: 6px;
+	border: solid transparent;
+	border-bottom: 1.5px solid black;
+	border-right: 1.5px solid black;
+	transform: rotate(-45deg);
 }
