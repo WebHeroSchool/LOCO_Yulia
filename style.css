@@ -10,13 +10,61 @@ body {
 	background: url(Rectangle.jpg) no-repeat;
 	font-family: Montserrat;
 }
+.first__header {
+	display: flex;
+	color: white;
+}
 .header__logo {
 	color: white;
 	position: absolute;
-	left: 52px;
-    top: 36px;
     font-size: 30px;
+    width: 14%;
+    text-align: center;
+    display: inline-block;
+    top: 36px;
+}
+.header__language {
+	position: relative;
+	display: inline-block;
+	width: 29%;
+	text-align: right;
+	font-size: 20px;
+	top: 42px;
 
+}
+.header__language::after {
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	top: 0px;
+	left: 426px;
+	border: solid transparent;
+	border-bottom: 2px solid white;
+	border-right: 2px solid white;
+	transform: rotate(45deg);
+}
+.header__burger {
+	position: absolute;
+	display: block;
+	width: 92px;
+	height: 92px;
+	background-color: #f2f2f2;
+	right: 0;
+	top:0;	
+}
+.header__burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 40%;
+    background: #333333;
+    margin-top: 40%;
+    margin-left:30%;
+
+}
+.header__burger span:first-child {
+	margin-top: 55%;
 }
 .first__picture {
 	position: absolute;
@@ -77,4 +125,26 @@ body {
 	border-bottom: 1.5px solid black;
 	border-right: 1.5px solid black;
 	transform: rotate(-45deg);
+}
+.first__footer {
+	position: absolute;
+	bottom: 40px;
+	display: flex;
+}
+.first__mouse {
+    width: 27px;
+    height: 46px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+}
+.first__social {
+}
+.first__social span {
+	height: 42px;
+	border: 21px solid white;
+	border-radius: 50%;
+	background: white;
 }
