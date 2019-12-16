@@ -1,28 +1,40 @@
-
-
-.first, .second, .third {
-	position: relative;
+html {
+	margin: 0 auto;	
+	box-sizing: border-box;
 	width: 1440px;
-	height: 900px;
 }
 
 body {
+	margin: 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
 	background: url(Rectangle.jpg) no-repeat;
 	font-family: Montserrat;
 }
+
+.first, .second, .third {
+	height: 900px;
+}
+
 .first__header {
 	display: flex;
 	color: white;
+	height: 100px;
+	margin-bottom: 70px;
+	width: 100%;
 }
+
 .header__logo {
+	display: flex;
 	color: white;
 	position: absolute;
     font-size: 30px;
     width: 14%;
-    text-align: center;
-    display: inline-block;
     top: 36px;
+    justify-content: center;
 }
+
 .header__language {
 	position: relative;
 	display: inline-block;
@@ -30,7 +42,6 @@ body {
 	text-align: right;
 	font-size: 20px;
 	top: 42px;
-
 }
 .header__language::after {
 	content: '';
@@ -45,13 +56,13 @@ body {
 	transform: rotate(45deg);
 }
 .header__burger {
-	position: absolute;
-	display: block;
 	width: 92px;
 	height: 92px;
 	background-color: #f2f2f2;
-	right: 0;
-	top:0;	
+	top:0;
+	position: absolute;
+	display: block;
+	right: 0;	
 }
 .header__burger span {
     display: block;
@@ -66,29 +77,56 @@ body {
 .header__burger span:first-child {
 	margin-top: 55%;
 }
+
+.first__main {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: center;
+	margin: 0 auto;
+}
 .first__picture {
-	position: absolute;
+	position: relative;
     width: 549px;
     height: 562px;
-    left: 186px;
-    top: 169px;
-    background: url(girl.jpg) no-repeat;
+    margin-right: 54px;
+    margin-bottom: 85px;
+	overflow: hidden;    
+ }
+ .girl {
+ 	position: absolute;
+ 	width: 549px;
+ 	top: -64px;
+
  }
  .first__text {
- 	position: absolute;
-    width: 491px;
-    height: 397px;
-    right: 176px;
-    top: 263px;
+ 	width: 500px;
  }
  .first__title{
- 	font-size: 80px;
- 	font-weight: bold;
- 	margin-top: 0;
- 	margin-bottom: 26px;
+ 	position: relative;
+	font-size: 80px;
+	font-weight: bold;
+	margin-top: 116px;
+	margin-bottom: 35px;
  }
+ .first__title::after {
+ 	display: none;
+ 	content: '';
+	position: absolute;
+	border: solid transparent;
+	border-bottom: 3px solid black;
+	border-right: 3px solid black;
+	transform: rotate(45deg);
+	height: 18px;
+	width: 18px;
+	left: 148px;
+	top:  120px;
+	}
+
  .first__words {
- 	margin-bottom: 36px;
+ 	margin-bottom: 40px;
+ 	font-size: 15px;
+    line-height: 21px;
  }
  .first__button-read {
  	border: 1.5px solid #000000;
@@ -98,6 +136,7 @@ body {
     font-size: 13px;
     padding: 14px 41px;
     text-transform: uppercase;
+    margin-right: 56px;
  }
  .first__button-next {
  	position: relative;
@@ -120,31 +159,105 @@ body {
 	content: '';
 	position: absolute;
 	left: 234px;
-	top: 6px;
+	top: 7px;
 	border: solid transparent;
 	border-bottom: 1.5px solid black;
 	border-right: 1.5px solid black;
 	transform: rotate(-45deg);
 }
 .first__footer {
-	position: absolute;
-	bottom: 40px;
 	display: flex;
+	flex-direction: row;
+}
+.first__mouse-wrap {
+	display: flex;
+	width: 86%;
+	justify-content: center;
+
 }
 .first__mouse {
     width: 27px;
     height: 46px;
-    border: 2px solid white;
+    border: 2px solid black;
     box-sizing: border-box;
     border-radius: 15px;
-    text-align: center;
     display: flex;
+    justify-content: center;
 }
+
 .first__social {
+	display: flex;
+    width: 14%;
+    justify-content: center;
+
 }
 .first__social span {
-	height: 42px;
-	border: 21px solid white;
-	border-radius: 50%;
-	background: white;
+	padding: 0 5px;
+
+}
+
+@media (max-width: 380px) {
+	html {
+		width: 380px;
+		box-sizing: border-box;
+	}
+	body { 
+    margin: 0 auto;
+	background-color: white;
+	background-image: none;
+  
+	}
+	.first {
+		position: relative;
+		height: 596px;
+	}
+	.first__header {
+		display: flex;
+		justify-content: space-between;
+		height: 70px;
+		margin-bottom: 0;
+	}
+	.header__logo {
+		color: black;
+		width: 40%;
+		top: 14px;
+	}
+
+	.header__language {
+		display: none;
+	}
+	.header__burger {
+		width: 70px;
+		height: 70px;
+		right: 5px;
+	}
+	.first__words, .first__button-read, .first__button-next {
+	display: none;
+	}
+	.first__picture {
+		display: none;
+	}
+	
+	.first__main {
+		position: relative;
+		background-image: url(girl.png);
+		width: 375px;
+		height: 583px;
+		margin:0;
+	}
+	.first__text h1 {
+		position: absolute;
+		font-size: 50px;
+		line-height: 51px;
+		bottom: 32px;
+		left: 30px;
+	}
+	
+    .first__title::after
+    {
+    	display: block;
+    }
+	.first__footer {
+		display: none;
+	}
 }
