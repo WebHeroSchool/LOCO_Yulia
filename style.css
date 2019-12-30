@@ -2,9 +2,8 @@ html {
 	margin: 0 auto;	
 	box-sizing: border-box;
 }
-
 body {
-	width: 1440px; /*если добавить max-width то с картинкой происходит какая-то дичь*/
+	width: 1440px;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -12,10 +11,8 @@ body {
 	min-width: 320px;
 	margin: 0 auto;
 }
-
 .first, .second, .third {
-	height: 900px;
-	
+	height: 900px;	
 }
 .first {
 	background-image: linear-gradient(to right, black 32%, white 10%);	
@@ -28,7 +25,6 @@ body {
 	margin-bottom: 70px;
 	width: 100%;
 }
-
 .header__logo {
 	display: flex;
 	justify-content: space-between;
@@ -36,7 +32,6 @@ body {
 	width: 28%;
 	padding: 24px;
 }
-
 .logo {
 	font-size: 30px;
 	font-weight: normal;
@@ -75,12 +70,10 @@ body {
     background: #333333;
     margin-top: 40%;
     margin-left:30%;
-
 }
 .menu__item:first-child {
 	margin-top: 55%;
 }
-
 .first__main {
 	display: flex;
 	flex-direction: row;
@@ -100,7 +93,6 @@ body {
  	position: absolute;
  	width: 549px;
  	top: -64px;
-
  }
  .first__text {
  	width: 500px;
@@ -124,14 +116,13 @@ body {
 	width: 18px;
 	left: 148px;
 	top:  120px;
-	}
-
- .first__words {
+}
+.first__words {
  	margin-bottom: 40px;
  	font-size: 15px;
     line-height: 21px;
- }
- .first__button-read {
+}
+.first__button-read {
  	border: 1.5px solid #000000;
     box-sizing: border-box;
     background: white;
@@ -176,7 +167,6 @@ body {
 	display: flex;
 	width: 86%;
 	justify-content: center;
-
 }
 .first__mouse {
     width: 27px;
@@ -187,16 +177,13 @@ body {
     display: flex;
     justify-content: center;
 }
-
 .first__social {
 	display: flex;
     width: 14%;
     justify-content: center;
-
 }
 .first__social span {
 	padding: 0 5px;
-
 }
 .second {
 	background: #fae8e4;
@@ -204,7 +191,6 @@ body {
 	display: grid;
 	grid-template-columns: 60% 40%;
 }
-
 .second__pictures {
 	display: flex;
 	height: 100%;
@@ -222,14 +208,12 @@ body {
  	top: 150px;
  	left: 100px;
 }
-
 .second__pic-pink {
 	right: 90px;
 	top: -20px;
 	z-index: 2;
 	position: absolute;
 }
- 
 .second__text {
 	background-color: white;
 	width: 488px;
@@ -276,7 +260,6 @@ body {
 	width: 375px;
 	margin-bottom: 38px;
 }
-
 .second__info {
 	display: flex;
 	justify-content: space-between;
@@ -306,7 +289,6 @@ body {
 .second__form-left, .second__form-right {
 	border: 2px solid black;
 }
-
 .second__button-add, .second__button-down, .second__button-up {
 	font-weight: 500;
 	font-size: 13px;
@@ -344,7 +326,6 @@ body {
     width: 241px;
     border-bottom: 1.5px solid black;
 }
-
 .second__link::after {
 	content: '';
     position: absolute;
@@ -364,7 +345,6 @@ body {
 	grid-template-columns: 1fr 623px;
 	grid-template-rows: 1fr 39px;
 }
-
 .third__text {
 	width: 475px;
     height: 351px;
@@ -399,12 +379,10 @@ body {
 	opacity: .5;
 	margin-bottom: 60px;
 	}
-
 .third__form-left , .third__form-right {
 	border: 2px solid black;
 	display: inline-block;
 }
-
 .third__button-add, .third__button-down, .third__button-up {
 	font-weight: 500;
 	text-transform: uppercase;
@@ -443,10 +421,9 @@ body {
     left: 235px;
     top: 6px;
     border: solid transparent;
-    width: 108px;
     border-bottom: 1.5px solid black;
+	width: 108px;
 }
-
 .third__link::after {
 	content: '';
     position: absolute;
@@ -457,7 +434,6 @@ body {
     border-right: 1.5px solid black;
     transform: rotate(-45deg);
 }
-
 .address {
 	grid-column-start: 2;
 	grid-row-start: 2;
@@ -468,157 +444,141 @@ body {
 	font-size: 12px;
 	text-transform: uppercase;
 	align-content: start;
-	line-height: 15px; /*вертикальное выравнивание не работает никак*/
-
+	line-height: 15px;
+	display: flex; 
 }
 .address__text {
-	align-self: start;  /*вертикальное выравнивание не работает никак*/
-   
+	align-self: start;
+	padding-right: 5px; 
 }
 .address__image {
 	
 }
 @media (max-width: 380px) {
 	html {
-		width: 380px;
-		box-sizing: border-box;
-	}
-	body { 
+	width: 380px;
+	box-sizing: border-box;
+}
+body { 
 	width: 380px;
     margin: 0 auto;
 	background-color: #f2f2f2;
-	background-image: none;
-  
-	}
-	.first , .second, .third {
-		height: 596px;
-	}
-	.first {
-		position: relative;
-		background: white;
-	}
-	.first__header {
-		display: flex;
-		justify-content: space-between;
-		height: 70px;
-		margin-bottom: 0;
-	}
-	.header__logo {
-		color: #333333;
-		width: 40%;
-		top: 14px;
-	}
-
-	.header__language {
-		display: none;
-	}
-	.header__menu {
-		width: 70px;
-		height: 70px;
-		right: 5px;
-	}
-	.first__words, .first__button-read, .first__button-next {
+    background-image: none;
+}
+.first , .second, .third {
+	height: 596px;
+}
+.first {
+	position: relative;
+	background: white;
+}
+.first__header {
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+	margin-bottom: 0;
+}
+.header__logo {
+	color: #333333;
+	width: 40%;
+	top: 14px;
+}
+.header__language {
 	display: none;
-	}
-	.first__picture {
-		display: none;
-	}
+}
+.header__menu {
+	width: 70px;
+	height: 70px;
+	right: 5px;
+}
+.first__words, .first__button-read, .first__button-next {
+	display: none;
+}
+.first__picture {
+	display: none;
+}
+.first__main {
+	position: relative;
+	background-image: url(girl.png);
+	width: 375px;
+	height: 583px;
+	margin:0;
+}
+.first__text h1 {
+	position: absolute;
+	font-size: 50px;
+	line-height: 51px;
+	bottom: 32px;
+	left: 30px;
+}
 	
-	.first__main {
-		position: relative;
-		background-image: url(girl.png);
-		width: 375px;
-		height: 583px;
-		margin:0;
-	}
-	.first__text h1 {
-		position: absolute;
-		font-size: 50px;
-		line-height: 51px;
-		bottom: 32px;
-		left: 30px;
-	}
-	
-    .first__title::after
-    {
-    	display: block;
-    }
-	.first__footer {
-		display: none;
-	}
-	.second__link {
-		display: none;
-	}
-	.second {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-	}
-
-	.second__pic-grey  {
-		display: none;
-	}
-	.second__form-left {
-		display: none;
-	}
-	.second__text {
-		width: 320px;
-		height: 281px;
-		}
-	.second__title {
-		font-size: 20px;
-		line-height: 20px;
-		margin-bottom: 0;
-	}
-	.second__subtitle {
-		font-size: 10px;
-		margin-bottom: 0;
-		margin-top: 0;
-	}
-   .second__words {
+.first__title::after {
+    display: block;
+}
+.first__footer {
+	display: none;
+}
+.second__link {
+	display: none;
+}
+.second {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.second__pic-grey  {
+	display: none;
+}
+.second__form-left {
+	display: none;
+}
+.second__text {
+	width: 320px;
+	height: 281px;
+}
+.second__title {
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 0;
+}
+.second__subtitle {
+	font-size: 10px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.second__words {
    	font-size: 9px;
    	line-height: 13px;
    	width: 80%;
    	margin-bottom: 9px;
-   }
-	.second__price {
-		font-size: 20px;
-	}
-
+}
+.second__price {
+	font-size: 20px;
+}
 .second__pic-pink {
 	display: block; 
-	
 	position: static;
 	width: 224px;
-   height: 326px
+    height: 326px
 }
 .second__info {
 	margin-bottom: 9px;
 }
-.second__words {
-	
-}
 .second__form-right {
 	width: 100%;
-	}
-
+}
 .third__text {
 	width: 305px;
 	height: 195px;
-	}
+}
 .third__form-left {
 	display: none;
-}
-.third__link {
-	
 }
 .third {
 	background-image: ;
 	background-image: url(clothes-small.png), linear-gradient(to right, #ebe3d8 27%, black 27%,  black 38%, #ebe3d8 38% );
 	background-position: center 34px, 0;
 	background-repeat: no-repeat;
-	
-	/*grid-template-columns: 50% 50%; */
 }
 .third__title {
 	font-size: 20px;
@@ -630,7 +590,6 @@ body {
 	line-height: 10px;
 	margin:0;
 }
-
 .third__content {
 	display: grid;
 	grid-template-rows: 48% 33% 25%;
@@ -646,21 +605,36 @@ body {
 .third__words {
 	font-size: 9px;
 	line-height: 13px;
-	margin-bottom: 20px;
-	
+	margin-bottom: 20px;	
 }
 .third__form-right {
 	font-size: 13px;
 	line-height: 0;
-	width: 100%;
-	
+	width: 100%;	
 }
 .third__button-add {
 	padding: 10px;
 }
 .third__link {
 	grid-row-start: 3;
-
+	width: 40%;
+	justify-self: center;
+	align-self: center;
+	font-size: 15px;
+	line-height: 18px;
 }
+.third__link::before {
+	width: 133px;
+    left: 0px;
+    top: 40px;
+}
+.third__link::after {
+    left: 133px;
+    top: 40px;
+}
+.address {
+	display: none;
+}
+
 }
 
