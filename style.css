@@ -113,10 +113,10 @@ body {
 	border-bottom: 3px solid black;
 	border-right: 3px solid black;
 	transform: rotate(45deg);
-	height: 18px;
-	width: 18px;
-	left: 148px;
-	top:  120px;
+	height: 25px;
+	width: 25px;
+	left: 248px;
+	top:  100px;
  	display: none;
 }
 .first__words {
@@ -729,10 +729,10 @@ body {
 .third__text {
 	padding: 22px 24px;
 	align-self: center;	
-	justify-self:center;
-	grid-row-start: 2; 
+	justify-self:center; 
 	width: 257px;
 	height: 171px;
+	grid-row-start: 2;
 }
 .third__words {
 	font-size: 9px;
@@ -754,6 +754,101 @@ body {
 	display: none;
 }
 }
+@media (max-width: 600px) {
+	html {
+	max-width: 600px;
+	box-sizing: border-box;
+}
+body { 
+	width: 600px;
+    margin: 0 auto;
+}
+.first, .second, .third {
+	height: 800px;
+}
+.first{
+	background: white;
+}
+.first__header {
+	color: black;
+	background-color: white;
+}
+.header__language {
+	display: none;
+}
+.header__menu {
+	width: 80px;
+	height: 80px;
+	
+	}
+.first__words, .first__button-read, .first__button-next {
+	display: none;
+}
+.first__text h1 {
+	position: absolute;
+	font-size: 56px;
+	line-height: 51px;
+	bottom: 100px;
+	left: 30px;
+}
+.first__title::after {
+    display: block;
+}
+.first__picture {
+	display: none;
+}
+.first__main {
+	position: relative;
+	background-image: url(girl.png);
+	background-size: 100%;
+	width: 600px;
+	height: 720px;
+	margin:0;
+}
+.first__header {
+	height: 80px;
+}
+
+.second {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 800px;
+}
+.second__link {
+	display: none;
+}
+.second__text {
+	width: 370px;
+    height: 361px;
+}
+.second__text {
+	margin-bottom: 100px;
+}
+.second__words, .third__words {
+	font-size: 12px;
+}
+.third {
+	background-image: url(clothes-small.png), linear-gradient(to right, #ebe3d8 27%, black 27%,  black 38%, #ebe3d8 38% );
+	background-position: center 60px, 0;
+	background-repeat: no-repeat;
+	background-size: 450px, auto;
+	display: grid;
+	grid-template-columns: 1fr 80%;
+	grid-template-rows: 50% 45% 5%;
+}
+.third__content{
+   grid-row-start: 2;
+   align-content: space-around;  
+}
+.third__text {
+	width: 355px;
+	height: 200px;
+}
+.address {
+	grid-row-start: 3;
+}
+
 @media (max-width: 414px) {
 	html {
 	width: 414px;
@@ -766,19 +861,6 @@ body {
 .first, .second, .third {
 	height: 736px;
 }
-.first{
-	background: white;
-}
-.first__header {
-	color: black;
-	background-color: white;
-}
-.header__language {
-	display: none;
-}
-.first__words, .first__button-read, .first__button-next {
-	display: none;
-}
 .first__text h1 {
 	position: absolute;
 	font-size: 50px;
@@ -786,13 +868,7 @@ body {
 	bottom: 100px;
 	left: 30px;
 }
-.first__title::after {
-    display: block;
-}
-.first__picture {
 
-	display: none;
-}
 .first__main {
 	position: relative;
 	background-image: url(girl.png);
@@ -804,38 +880,46 @@ body {
 .first__header {
 	height: 70px;
 }
-
+.first__title::after {
+	left: 148px;
+	height: 18px;
+	width: 18px;
+}
 .second {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
 	height: 736px;
 }
-.second__link {
-	display: none;
+.second__text {
+	margin-bottom: 39px;
+	height: 281px; 
+	width: 320px;
+}
+.second__words, .third__words {
+	font-size: 9px;
 }
 .address {
 	display: none;
 }
 .third {
-	background-image: url(clothes-small.png), linear-gradient(to right, #ebe3d8 27%, black 27%,  black 38%, #ebe3d8 38% );
 	background-position: center 34px, 0;
-	background-repeat: no-repeat;
 	background-size: 400px, auto;
-	grid-template-columns: 1fr 90%;;
 }
 .third__text {
+	width: 305px;
+	height: 195px;
+}
+.third__content {
 	width: 305px;
 	height: 195px;
 }
 .third__link {
 	display: block;
 	grid-row-start: 3;
-	width: 40%;
+	width: 60%;
 	justify-self: center;
 	align-self: center;
 	font-size: 15px;
 	line-height: 18px;
+	margin-left: 150px;
 }
 .third__link::before {
 	width: 133px;
@@ -935,5 +1019,13 @@ body {
 	height: 100%;	
 	width: 375px;
 }
-
+.third__link {
+	display: block;
+	grid-row-start: 3;
+	width: 40%;
+	justify-self: center;
+	align-self: center;
+	font-size: 15px;
+	line-height: 18px;
+}
 }
