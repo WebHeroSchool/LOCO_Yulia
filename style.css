@@ -339,7 +339,7 @@ body {
     transform: rotate(-45deg);
 }
 .third {
-	background-image: url(clothes.jpg), linear-gradient(to right, #ebe3d8 27%, black 27%,  black 32%, #ebe3d8 32% );
+	background-image: url(img/clothes.jpg), linear-gradient(to right, #ebe3d8 27%, black 27%,  black 32%, #ebe3d8 32% );
 	background-position: 88px center, 0;
 	background-repeat: no-repeat;
 	background-size: 827px, auto;
@@ -617,7 +617,7 @@ body {
 
 }
 .first__picture {
-	background-image: url(girl.png);
+	background-image: url(img/girl.png);
     height: 350px;
     margin-right: 20px;
 	width: 300px;
@@ -799,7 +799,7 @@ body {
 }
 .first__main {
 	position: relative;
-	background-image: url(girl.png);
+	background-image: url(img/girl.png);
 	background-size: 100%;
 	width: 600px;
 	height: 720px;
@@ -829,7 +829,7 @@ body {
 	font-size: 12px;
 }
 .third {
-	background-image: url(clothes-small.png), linear-gradient(to right, #ebe3d8 27%, black 27%,  black 38%, #ebe3d8 38% );
+	background-image: url(img/clothes-small.png), linear-gradient(to right, #ebe3d8 27%, black 27%,  black 38%, #ebe3d8 38% );
 	background-position: center 60px, 0;
 	background-repeat: no-repeat;
 	background-size: 450px, auto;
@@ -871,7 +871,7 @@ body {
 
 .first__main {
 	position: relative;
-	background-image: url(girl.png);
+	background-image: url(img/girl.png);
 	background-size: 100%;
 	width: 414px;
 	height: 666px;
@@ -974,7 +974,7 @@ body {
 }
 .first__main {
 	position: relative;
-	background-image: url(girl.png);
+	background-image: url(img/girl.png);
 	width: 375px;
 	height: 583px;
 	margin:0;
