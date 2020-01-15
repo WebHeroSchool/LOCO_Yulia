@@ -255,12 +255,12 @@ body {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 15px;
 	line-height: 21px;
 	color: #000000;
 	opacity: 0.5;
 	width: 77%;
 	margin-bottom: 38px;
+	font-size: 15px;
 }
 .second__info {
 	display: flex;
@@ -687,7 +687,7 @@ body {
 }
 .second__text {
 	width: 320px;
-	height: 281px;
+	height: 341px;
 }
 .second__title {
 	font-size: 20px;
@@ -700,7 +700,7 @@ body {
 	margin-top: 0;
 }
 .second__words {
-   	font-size: 9px;
+   	font-size: 12px;
    	line-height: 13px;
    	width: 80%;
    	margin-bottom: 9px;
@@ -738,13 +738,13 @@ body {
 .third__text {
 	padding: 22px 24px; 
 	width: 257px;
-	height: 171px;
+	height: 191px;
 	grid-row-start: 2;
 	align-self: center;
 	justify-self: center;
 }
 .third__words {
-	font-size: 9px;
+	font-size: 12px;
 	line-height: 13px;
 	margin-bottom: 20px;	
 }
@@ -835,7 +835,7 @@ body {
 	margin-bottom: 100px;
 }
 .second__words, .third__words {
-	font-size: 12px;
+	font-size: 14px;
 }
 .third {
 	background-image: url(img/clothes-small.png), linear-gradient(to right, #ebe3d8 27%, black 27%,  black 38%, #ebe3d8 38% );
@@ -850,9 +850,18 @@ body {
    align-content: space-around;
    grid-row-start: 2;  
 }
+.third__title, .second__title {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
 .third__text {
 	width: 355px;
-	height: 200px;
+	height: 220px;
+}
+.third__subtitle, .second__subtitle {
+	font-size: 14px;
+	line-height: 14px;
 }
 .address {
 	display: none;
@@ -888,7 +897,7 @@ body {
     margin: 0 auto;
 }
 .first, .second, .third {
-	height: 736px;
+	max-height: 736px;
 }
 .first__text h1 {
 	position: absolute;
@@ -901,9 +910,9 @@ body {
 .first__main {
 	position: relative;
 	background-image: url(img/girl.png);
-	background-size: 100%;
+	background-size: 110%;
 	width: 414px;
-	height: 666px;
+	height: 668px;
 	margin:0;
 }
 .first__header {
@@ -972,7 +981,7 @@ body {
     background-image: none;
 }
 .first , .second, .third {
-	height: 596px;
+	max-height: 596px;
 }
 .first {
 	position: relative;
